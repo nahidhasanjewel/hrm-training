@@ -7,18 +7,17 @@ using System.Web;
 
 namespace HRM.Models
 {
-    public class Division
+    public class Dept
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-       
         public int Id { get; set; }
+        public int DeptCode { get; set; }
+        public int DeptName { get; set; }
 
-        [Display(Name = "Division Code")]
+        public int DivisionId { get; set; }
 
-        public int DivisionCode { get; set; }
-        [Display(Name = "Division Name")]
+        [ForeignKey("DivisionId")]
+        public virtual Division Divisions { get; set; }
 
-        public string Name { get; set; }
-        public List<Dept> Depts { get; set; }
     }
 }
