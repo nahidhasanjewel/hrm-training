@@ -197,7 +197,9 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\DeptsController.cs" />
+    <Compile Include="Controllers\DesignationsController.cs" />
     <Compile Include="Controllers\DivisionsController.cs" />
+    <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\SectionsController.cs" />
@@ -236,10 +238,36 @@
     <Compile Include="Migrations\201904171445270_mig004.Designer.cs">
       <DependentUpon>201904171445270_mig004.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904190920214_section.cs" />
+    <Compile Include="Migrations\201904190920214_section.Designer.cs">
+      <DependentUpon>201904190920214_section.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904191008579_designation.cs" />
+    <Compile Include="Migrations\201904191008579_designation.Designer.cs">
+      <DependentUpon>201904191008579_designation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904191015238_designationAdded.cs" />
+    <Compile Include="Migrations\201904191015238_designationAdded.Designer.cs">
+      <DependentUpon>201904191015238_designationAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904191026331_designationFullName.cs" />
+    <Compile Include="Migrations\201904191026331_designationFullName.Designer.cs">
+      <DependentUpon>201904191026331_designationFullName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904191044476_designationFullName1.cs" />
+    <Compile Include="Migrations\201904191044476_designationFullName1.Designer.cs">
+      <DependentUpon>201904191044476_designationFullName1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904191130447_employee.cs" />
+    <Compile Include="Migrations\201904191130447_employee.Designer.cs">
+      <DependentUpon>201904191130447_employee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Dept.cs" />
+    <Compile Include="Models\Designation.cs" />
     <Compile Include="Models\Division.cs" />
+    <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Section.cs" />
@@ -315,7 +343,6 @@
     <Content Include="Views\Divisions\Details.cshtml" />
     <Content Include="Views\Divisions\Edit.cshtml" />
     <Content Include="Views\Divisions\Index.cshtml" />
-    <Content Include="Views\Depts\Create.cshtml" />
     <Content Include="Views\Depts\Delete.cshtml" />
     <Content Include="Views\Depts\Details.cshtml" />
     <Content Include="Views\Depts\Edit.cshtml" />
@@ -325,6 +352,16 @@
     <Content Include="Views\Sections\Details.cshtml" />
     <Content Include="Views\Sections\Edit.cshtml" />
     <Content Include="Views\Sections\Index.cshtml" />
+    <Content Include="Views\Designations\Delete.cshtml" />
+    <Content Include="Views\Designations\Index.cshtml" />
+    <Content Include="Views\Designations\Create.cshtml" />
+    <Content Include="Views\Designations\Details.cshtml" />
+    <Content Include="Views\Designations\Edit.cshtml" />
+    <Content Include="Views\Employees\Create.cshtml" />
+    <Content Include="Views\Employees\Delete.cshtml" />
+    <Content Include="Views\Employees\Details.cshtml" />
+    <Content Include="Views\Employees\Edit.cshtml" />
+    <Content Include="Views\Employees\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -359,6 +396,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904171445270_mig004.resx">
       <DependentUpon>201904171445270_mig004.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904190920214_section.resx">
+      <DependentUpon>201904190920214_section.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904191008579_designation.resx">
+      <DependentUpon>201904191008579_designation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904191015238_designationAdded.resx">
+      <DependentUpon>201904191015238_designationAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904191026331_designationFullName.resx">
+      <DependentUpon>201904191026331_designationFullName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904191044476_designationFullName1.resx">
+      <DependentUpon>201904191044476_designationFullName1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904191130447_employee.resx">
+      <DependentUpon>201904191130447_employee.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
