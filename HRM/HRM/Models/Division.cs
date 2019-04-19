@@ -18,6 +18,11 @@ namespace HRM.Models
         public int DivisionCode { get; set; }
         [Display(Name = "Division Name")]
 
+        public int DivisionPlace { get; set; }
+        [Display(Name = "Division place")]
+
+      
+
         public string Name { get; set; }
         public List<Dept> Depts { get; set; }
     }
