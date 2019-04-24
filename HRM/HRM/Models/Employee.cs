@@ -22,7 +22,13 @@ namespace HRM.Models
         [Display(Name = "Father Name")]
         public string FatherNameName { get; set; }
 
-       
+        [Display(Name = "Phone Number")]
+        [StringLength(10)]
+        public string  PhoneNumber{ get; set; }
+
+        public string ImagePath { get; set; }
+
+
 
 
         public int Designation { get; set; }

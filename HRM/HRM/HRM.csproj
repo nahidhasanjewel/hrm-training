@@ -262,6 +262,14 @@
     <Compile Include="Migrations\201904191130447_employee.Designer.cs">
       <DependentUpon>201904191130447_employee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904231814438_phonenumber.cs" />
+    <Compile Include="Migrations\201904231814438_phonenumber.Designer.cs">
+      <DependentUpon>201904231814438_phonenumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904241417184_pic.cs" />
+    <Compile Include="Migrations\201904241417184_pic.Designer.cs">
+      <DependentUpon>201904241417184_pic.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Dept.cs" />
@@ -414,6 +422,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904191130447_employee.resx">
       <DependentUpon>201904191130447_employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904231814438_phonenumber.resx">
+      <DependentUpon>201904231814438_phonenumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904241417184_pic.resx">
+      <DependentUpon>201904241417184_pic.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using HRM.Models;
+using System.Drawing;
 
 namespace HRM.Controllers
 {
@@ -41,6 +42,7 @@ namespace HRM.Controllers
         {
             ViewBag.Designation = new SelectList(db.Designations, "Id", "Shortname");
             return View();
+
         }
 
         // POST: Employees/Create
@@ -48,10 +50,18 @@ namespace HRM.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,EmployeeName,FullName,FatherNameName,Designation")] Employee employee)
+        public ActionResult Create([Bind(Include = "Id,EmployeeName,FullName,FatherNameName,PhoneNumber,Designation")] Employee employee, HttpPostedFileBase file)
         {
             if (ModelState.IsValid)
             {
+
+                if (file != null)
+                {
+                    file.SaveAs(HttpContext.Server.MapPath("~/Images/")
+                                                          + file.FileName);
+                    
+                }
+
                 db.Employees.Add(employee);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -82,7 +92,7 @@ namespace HRM.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,EmployeeName,FullName,FatherNameName,Designation")] Employee employee)
+        public ActionResult Edit([Bind(Include = "Id,EmployeeName,FullName,FatherNameName,PhoneNumber,Designation")] Employee employee)
         {
             if (ModelState.IsValid)
             {

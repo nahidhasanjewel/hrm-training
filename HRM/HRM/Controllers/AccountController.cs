@@ -12,7 +12,7 @@ using HRM.Models;
 
 namespace HRM.Controllers
 {
-    [Authorize]
+  
     public class AccountController : Controller
     {
         private ApplicationSignInManager _signInManager;

@@ -38,5 +38,6 @@ namespace HRM.Models
 
         public DbSet<Designation> Designations { get; set; }
         public DbSet<Employee> Employees { get; set; }
+        public object Image { get; internal set; }
     } 
 }
