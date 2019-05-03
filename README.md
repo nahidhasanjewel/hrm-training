@@ -1,2 +1,2 @@
-# hrm-training
+# hrm
 Human resource management
