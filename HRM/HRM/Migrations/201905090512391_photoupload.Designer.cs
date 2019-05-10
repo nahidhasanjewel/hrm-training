@@ -7,13 +7,13 @@ namespace HRM.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class phonenumber : IMigrationMetadata
+    public sealed partial class photoupload : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(phonenumber));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(photoupload));
         
         string IMigrationMetadata.Id
         {
-            get { return "201904231814438_phonenumber"; }
+            get { return "201905090512391_photoupload"; }
         }
         
         string IMigrationMetadata.Source

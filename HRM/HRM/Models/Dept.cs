@@ -11,13 +11,17 @@ namespace HRM.Models
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public int DeptCode { get; set; }
-        public int DeptName { get; set; }
+
+        [Display(Name = "Dept. Code")]
+        public string DeptCode { get; set; }
+
+        [Display(Name = "Dept. Name")]
+        public string DeptName { get; set; }
 
         public int DivisionId { get; set; }
-
         [ForeignKey("DivisionId")]
-        public virtual Division Divisions { get; set; }
+        public virtual Division Division { get; set; }
 
+        public List<Section> Sections { get; set; }
     }
 }

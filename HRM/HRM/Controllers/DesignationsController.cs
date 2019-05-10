@@ -38,7 +38,6 @@ namespace HRM.Controllers
         // GET: Designations/Create
         public ActionResult Create()
         {
-
             return View();
         }
 
@@ -47,7 +46,7 @@ namespace HRM.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Shortname,DesignationName")] Designation designation)
+        public ActionResult Create([Bind(Include = "Id,Shortname,DesignationName,FullDesignationName")] Designation designation)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +78,7 @@ namespace HRM.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,FullDesignationName,Shortname,DesignationName")] Designation designation)
+        public ActionResult Edit([Bind(Include = "Id,Shortname,DesignationName,FullDesignationName")] Designation designation)
         {
             if (ModelState.IsValid)
             {

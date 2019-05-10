@@ -1,4 +1,5 @@
-﻿@model HRM.Models.Employee
+﻿
+@model HRM.Models.Employee
 
 @{
     ViewBag.Title = "Details";
@@ -11,19 +12,27 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Designations.Shortname)
+            @Html.DisplayNameFor(model => model.Dept.DeptCode)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Designations.Shortname)
+            @Html.DisplayFor(model => model.Dept.DeptCode)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.EmployeeName)
+            @Html.DisplayNameFor(model => model.Designation.ShortName)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.EmployeeName)
+            @Html.DisplayFor(model => model.Designation.ShortName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployeeCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeeCode)
         </dd>
 
         <dt>
@@ -35,20 +44,72 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.FatherNameName)
+            @Html.DisplayNameFor(model => model.NickName)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.FatherNameName)
+            @Html.DisplayFor(model => model.NickName)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.PhoneNumber)
+            @Html.DisplayNameFor(model => model.MobileNumber)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.PhoneNumber)
+            @Html.DisplayFor(model => model.MobileNumber)
         </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FatherName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FatherName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MotherName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MotherName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BloodGroup)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BloodGroup)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            Employee Photo
+        </dt>
+
+        <dd>
+            <div style="height:200px; width:200px; overflow:auto;">
+                <img id="imgEmpPhoto" src="@Model.EmployeePhotoPath.TrimStart('~')" alt="Employee Image">
+            </div>
+        </dd>
+
+
 
     </dl>
 </div>
@@ -56,3 +117,14 @@
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script type="text/javascript">
+        //Display any size into 200 px X 200 px
+        $(document).ready(function () {
+            $('#imgEmpPhoto').css({ 'height': '200px', 'width': '200px' });
+        });
+    </script>
+}

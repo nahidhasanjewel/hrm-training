@@ -7,13 +7,13 @@ namespace HRM.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class designationFullName : IMigrationMetadata
+    public sealed partial class _222 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(designationFullName));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(_222));
         
         string IMigrationMetadata.Id
         {
-            get { return "201904191026331_designationFullName"; }
+            get { return "201905080428594_222"; }
         }
         
         string IMigrationMetadata.Source

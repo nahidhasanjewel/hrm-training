@@ -206,69 +206,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201904121104402_mig011.cs" />
-    <Compile Include="Migrations\201904121104402_mig011.Designer.cs">
-      <DependentUpon>201904121104402_mig011.cs</DependentUpon>
+    <Compile Include="Migrations\201905080428594_222.cs" />
+    <Compile Include="Migrations\201905080428594_222.Designer.cs">
+      <DependentUpon>201905080428594_222.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201904121131204_jewel01.cs" />
-    <Compile Include="Migrations\201904121131204_jewel01.Designer.cs">
-      <DependentUpon>201904121131204_jewel01.cs</DependentUpon>
+    <Compile Include="Migrations\201905090512391_photoupload.cs" />
+    <Compile Include="Migrations\201905090512391_photoupload.Designer.cs">
+      <DependentUpon>201905090512391_photoupload.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201904121211506_adddept.cs" />
-    <Compile Include="Migrations\201904121211506_adddept.Designer.cs">
-      <DependentUpon>201904121211506_adddept.cs</DependentUpon>
+    <Compile Include="Migrations\201905100926237_depts112.cs" />
+    <Compile Include="Migrations\201905100926237_depts112.Designer.cs">
+      <DependentUpon>201905100926237_depts112.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201904131117162_mig22.cs" />
-    <Compile Include="Migrations\201904131117162_mig22.Designer.cs">
-      <DependentUpon>201904131117162_mig22.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904131132518_AddDate.cs" />
-    <Compile Include="Migrations\201904131132518_AddDate.Designer.cs">
-      <DependentUpon>201904131132518_AddDate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904171316293_jewel22.cs" />
-    <Compile Include="Migrations\201904171316293_jewel22.Designer.cs">
-      <DependentUpon>201904171316293_jewel22.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904171435486_mig003.cs" />
-    <Compile Include="Migrations\201904171435486_mig003.Designer.cs">
-      <DependentUpon>201904171435486_mig003.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904171445270_mig004.cs" />
-    <Compile Include="Migrations\201904171445270_mig004.Designer.cs">
-      <DependentUpon>201904171445270_mig004.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904190920214_section.cs" />
-    <Compile Include="Migrations\201904190920214_section.Designer.cs">
-      <DependentUpon>201904190920214_section.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904191008579_designation.cs" />
-    <Compile Include="Migrations\201904191008579_designation.Designer.cs">
-      <DependentUpon>201904191008579_designation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904191015238_designationAdded.cs" />
-    <Compile Include="Migrations\201904191015238_designationAdded.Designer.cs">
-      <DependentUpon>201904191015238_designationAdded.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904191026331_designationFullName.cs" />
-    <Compile Include="Migrations\201904191026331_designationFullName.Designer.cs">
-      <DependentUpon>201904191026331_designationFullName.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904191044476_designationFullName1.cs" />
-    <Compile Include="Migrations\201904191044476_designationFullName1.Designer.cs">
-      <DependentUpon>201904191044476_designationFullName1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904191130447_employee.cs" />
-    <Compile Include="Migrations\201904191130447_employee.Designer.cs">
-      <DependentUpon>201904191130447_employee.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904231814438_phonenumber.cs" />
-    <Compile Include="Migrations\201904231814438_phonenumber.Designer.cs">
-      <DependentUpon>201904231814438_phonenumber.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904241417184_pic.cs" />
-    <Compile Include="Migrations\201904241417184_pic.Designer.cs">
-      <DependentUpon>201904241417184_pic.cs</DependentUpon>
+    <Compile Include="Migrations\201905100943316_designation111.cs" />
+    <Compile Include="Migrations\201905100943316_designation111.Designer.cs">
+      <DependentUpon>201905100943316_designation111.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -370,8 +322,22 @@
     <Content Include="Views\Employees\Details.cshtml" />
     <Content Include="Views\Employees\Edit.cshtml" />
     <Content Include="Views\Employees\Index.cshtml" />
+    <Content Include="Views\Depts\Create.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201905080428594_222.resx">
+      <DependentUpon>201905080428594_222.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905090512391_photoupload.resx">
+      <DependentUpon>201905090512391_photoupload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905100926237_depts112.resx">
+      <DependentUpon>201905100926237_depts112.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905100943316_designation111.resx">
+      <DependentUpon>201905100943316_designation111.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -379,56 +345,6 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201904121104402_mig011.resx">
-      <DependentUpon>201904121104402_mig011.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904121131204_jewel01.resx">
-      <DependentUpon>201904121131204_jewel01.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904121211506_adddept.resx">
-      <DependentUpon>201904121211506_adddept.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904131117162_mig22.resx">
-      <DependentUpon>201904131117162_mig22.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904131132518_AddDate.resx">
-      <DependentUpon>201904131132518_AddDate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904171316293_jewel22.resx">
-      <DependentUpon>201904171316293_jewel22.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904171435486_mig003.resx">
-      <DependentUpon>201904171435486_mig003.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904171445270_mig004.resx">
-      <DependentUpon>201904171445270_mig004.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904190920214_section.resx">
-      <DependentUpon>201904190920214_section.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904191008579_designation.resx">
-      <DependentUpon>201904191008579_designation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904191015238_designationAdded.resx">
-      <DependentUpon>201904191015238_designationAdded.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904191026331_designationFullName.resx">
-      <DependentUpon>201904191026331_designationFullName.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904191044476_designationFullName1.resx">
-      <DependentUpon>201904191044476_designationFullName1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904191130447_employee.resx">
-      <DependentUpon>201904191130447_employee.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904231814438_phonenumber.resx">
-      <DependentUpon>201904231814438_phonenumber.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904241417184_pic.resx">
-      <DependentUpon>201904241417184_pic.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
